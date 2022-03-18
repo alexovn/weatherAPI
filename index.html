@@ -13,13 +13,16 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6 mx-auto text-center bg-primary mt-5 p-5 rounded">
-        <h1 id="w-location"></h1>
+        <div class="location">
+          <span id="w-city"></span>,
+          <span id="w-country"></span>
+        </div>
         <h3 id="w-desc" class="text-dark"></h3>
         <h3 id="w-string"></h3>
         <img id="w-icon">
         <ul id="w-details" class="list-group mt-3">
           <li id="w-humidity" class="list-group-item"></li>
-          <li id="w-dewpoint" class="list-group-item"></li>
+          <li id="w-pressure" class="list-group-item"></li>
           <li id="w-feels-like" class="list-group-item"></li>
           <li id="w-wind" class="list-group-item"></li>
         </ul>
@@ -69,10 +72,10 @@
     crossorigin="anonymous"></script>
 
   <!-- Custom -->
-  <script src="storage.js"></script>
-  <script src="weather.js"></script>
-  <script src="ui.js"></script>
-  <script src="app.js"></script>
+  <script src="scripts/storage.js"></script>
+  <script src="scripts/weather.js"></script>
+  <script src="scripts/ui.js"></script>
+  <script src="scripts/app.js"></script>
 </body>
 
 </html>

@@ -22,7 +22,7 @@ class Weather {
     let coords = await this.getCoords().then(data => data);
     const {lat, lon} = coords[0];
 
-    const response =  await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${this.apiKey}`);
+    const response =  await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${this.apiKey}&units=metric`);
 
     const responseData = await response.json();
 
